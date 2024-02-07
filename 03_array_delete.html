@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+      const data = [4, 5, 8, 6, 2, 6, 8, 9, 2, 3];
+      const position = 3;
+      for (let i = position; i < data.length - 1; i++) {
+        data[i] = data[i + 1];
+      }
+      data.length = data.length - 1;
+      console.log(data);
+    </script> -->
+
+    <script>
+      function getElemnent() {
+        const data = [4, 5, 8, 6, 2, 6, 8, 9, 2, 3];
+        console.log(data)
+        const position = parseInt(document.getElementById("position").value);
+        for (let i = position; i < data.length - 1; i++) {
+          data[i] = data[i + 1];
+        }
+        data.length = data.length - 1;
+        console.log(data);
+      }
+    </script>
+
+    <!-- <script>
+      function getElement() {
+        const data = [4, 5, 8, 6, 2, 6, 8, 9, 2, 3];
+        const position = parseInt(document.getElementById("position").value);
+        data.splice(position, 1);
+        console.log(data);
+      }
+    </script> -->
+
+    <input type="text" name="" id="position" placeholder="enter position" />
+    <button onclick="getElement()">get Element</button>
+  </body>
+</html>
