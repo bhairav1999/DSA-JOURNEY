@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>interview</title>
+  </head>
+  <body>
+    <!-- this array i want to only b new array in js -->
+    <!-- <script>
+      let arry = ["a", "b", "c", "d"];
+      const newarry = [];
+      for (let i = 0; i < arry.length; i++) {
+        if (arry[i] === "b") {
+          newarry.push(arry[i]);
+          break;
+        }
+      }
+      console.log(newarry);
+    </script> -->
+
+    <!-- 2 -->
+
+    <!-- <script>
+      let arry = ["a", "b", "c", "d"];
+      let newarray = [];
+      for (let i = 0; i < arry.length; i++) {
+        if (i % 2 == 1) {
+          newarray.push(arry[i]);
+        }
+      }
+      console.log(newarray);
+    </script> -->
+
+    <!-- <script>
+      var str = "my name is bhairav";
+      for (let i = str.length - 1; i >= 0; i--) {
+        console.log(str[i]);
+      }
+    </script> -->
+
+
+    <script>
+      let str = 'my name is abc'
+      let revrseSentence =""
+      let word="";
+      for(let i=0; i<str.length; i++){
+       
+      
+        if(str[i] !== " "){
+          word=str[i]+ word;
+          // console.log(word)
+        }
+        else{
+          revrseSentence +=word + ' ';
+          word = '' 
+          console.log(revrseSentence)   // space
+        }
+      }
+      revrseSentence += word;
+      // console.log(revrseSentence)
+    </script>
+  </body>
+</html>
