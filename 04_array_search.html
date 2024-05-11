@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- <script>
+        let data =[12,13,14,15,16,17,18,19,20]
+        let searchResults =18;
+        let index=null;
+        for(let i=0; i<data.length-1; i++){
+            // console.log(data[i])
+            if(data[i]===searchResults){
+                console.log(i)
+                index=i
+            }
+        }
+        console.log(index)
+    </script> -->
+
+    <input type="text" name="" id="searchEl" />
+    <button onclick="searchElment()">search</button>
+
+    <script>
+      function searchElment() {
+        let data = [12, 13, 14, 15, 16, 17, 18, 19, 20];
+        let searchResults = parseInt(document.getElementById("searchEl").value);
+        let index = undefined;
+        for (let i = 0; i < data.length - 1; i++) {
+          // console.log(data[i])
+          if (data[i] === searchResults) {
+            index = i;
+          }
+        }
+        console.log(index);
+      }
+    </script>
+  </body>
+</html>
